@@ -1,0 +1,12 @@
+matplotlib
+seaborn
+numpy
+pandas
+geopandas
+contextily
+geopy
+pyproj
+sklearn
+statsmodels
+ipykernel
+notebook

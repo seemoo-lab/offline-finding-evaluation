@@ -1,0 +1,7 @@
+ClusterId,Latitude,Longitude,Rank,Description
+0,0,0,1,Home
+1,0,0,2,Office
+5,0,0,3,Partner
+3,0,0,4,Friends
+2,0,0,5,Sport
+4,0,0,6,Family
