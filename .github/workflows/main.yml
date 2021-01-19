@@ -1,0 +1,36 @@
+name: Test and run
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  clean-notebook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - name: Check for clean notebook
+        run: |
+          pip install nb-clean
+          python -m nb_clean check analysis.ipynb
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - name: Install LaTeX (for plots)
+        run: |
+          sudo apt-get install texlive-latex-extra texlive-fonts-recommended dvipng cm-super
+      - name: Install dependencies
+        run: |
+          make install
+      - name: Run notebook
+        run: |
+          make run
