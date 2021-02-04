@@ -10,3 +10,5 @@ sklearn
 statsmodels
 ipykernel
 notebook
+nb-black
+nb-clean
