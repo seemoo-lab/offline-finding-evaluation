@@ -23,7 +23,7 @@ nb-clean: $(NOTEBOOK)
 	$(PYTHON) -m nb_clean clean $(NOTEBOOK)
 
 $(VENV):
-	python3 -m venv $@
+	virtualenv -p 3.8 $@
 
 clean:
 	-jupyter kernelspec uninstall $(KERNEL)
