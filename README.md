@@ -35,3 +35,7 @@ make run
 
 * Alexander Heinrich ([email](mailto:aheinrich@seemoo.tu-darmstadt.de))
 * Milan Stute ([email](mailto:mstute@seemoo.tu-darmstadt.de))
+
+## License
+
+The code and data in this repository are licensed under the [**GNU General Public License v3.0**](LICENSE).
