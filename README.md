@@ -25,7 +25,7 @@ make
 
 ## Reproduce figures for our paper
 
-Reproduce the figures in our paper by running (figures will be available in [plots](plots) folder):
+Reproduce the figures in our paper by running (runs the notebook with the `LATEX` variable set to `True`, figures will be available in [plots](plots) folder):
 
 ```bash
 make run
