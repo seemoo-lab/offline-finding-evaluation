@@ -31,6 +31,10 @@ Reproduce the figures in our paper by running (runs the notebook with the `LATEX
 make run
 ```
 
+## Data and Data Format
+
+Please refer to [README](data/README.md) in the `data` folder.
+
 ## Authors
 
 * Alexander Heinrich ([email](mailto:aheinrich@seemoo.tu-darmstadt.de))
